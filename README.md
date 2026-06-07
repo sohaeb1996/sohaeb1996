@@ -1,4 +1,4 @@
-<h1 align="center">Sohaib Gamal Elsayed</h1>
+<h1 align="center">Sohaib Gamal</h1>
 <h3 align="center">🛡️ Penetration Tester · Web Application Security · Offensive Security</h3>
 
 <p align="center">
