@@ -86,6 +86,23 @@ Ranked in the **Top 3%** of TryHackMe globally across **161+** hands-on rooms, a
 
 ---
 
+## 🚩 Selected Engagements
+
+> Lab engagements (TryHackMe) documented as full client-style reports. Click any name for the report.
+
+| Engagement | Type | Key techniques | Outcome |
+|---|---|---|---|
+| [**Dead Drop**](https://github.com/sohaeb1996/pentest-writeups/blob/main/active-directory/dead-drop.md) | Web → AD | SQLi auth bypass → Node `require()` RCE → leaked creds → hardcoded domain creds in APK → AD ACL abuse (nested Domain Admins) | 🔴 **Domain Admin** |
+| [**Silent Monitor**](https://github.com/sohaeb1996/pentest-writeups/blob/main/active-directory/silent-monitor.md) | Web → Host | SQLi + command injection → SSH foothold → cracked KeePass (KDBX4) vault → privesc | 🔴 **Root** |
+| [**Intro to AD Lateral Movement**](https://github.com/sohaeb1996/pentest-writeups/blob/main/active-directory/intro-to-ad-lateral-movement.md) | Active Directory | PsExec / WinRM · Pass-the-Hash · local-admin reuse · SOCKS pivot to DC | 🔴 **Domain Admin** (5/5 flags) |
+| [**Jump**](https://github.com/sohaeb1996/pentest-writeups/blob/main/host-and-web/jump.md) | Linux Host | Anonymous FTP recon → PATH hijack → `sudo deploy.sh` → `sudo less` GTFOBin | 🔴 **Root** (5/5 flags) |
+| [**Tomcat CVE-2024-50379**](https://github.com/sohaeb1996/pentest-writeups/blob/main/host-and-web/tomcat-cve-2024-50379.md) | Web Server | TOCTOU race-condition RCE on Apache Tomcat 10.1.x → reverse shell | 🔴 **RCE** |
+| [**Cloud Security Fundamentals**](https://github.com/sohaeb1996/pentest-writeups/blob/main/emerging-tech/cloud-security-fundamentals.md) | Cloud | SSRF → IMDS credential theft → role assumption → production secrets | 🔴 **Cloud creds** |
+
+📄 Full report library → **[pentest-writeups](https://github.com/sohaeb1996/pentest-writeups)**
+
+---
+
 ## 🔬 Custom Tooling Highlights
 
 - **Dagger** — password-reset flow auditor: detects tokens leaked in API responses, scores token entropy to flag brute-forceable values, checks user enumeration & rate-limiting, and emits ready-to-run `crunch`/`ffuf`/`hydra` recipes.
